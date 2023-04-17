@@ -6,6 +6,7 @@ import org.springframework.beans.factory.ConfigurableBeanFactory;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.core.convert.ConversionService;
 import org.springframework.util.StringValueResolver;
 
 import java.util.ArrayList;
@@ -20,6 +21,8 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
     private final Map<String, Object> factoryBeanObjectCache = new HashMap<>();
 
     private final List<StringValueResolver> embeddedValueResolvers = new ArrayList<>();
+
+    private ConversionService conversionService;
 
 
     @Override
@@ -87,5 +90,11 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
         return result;
     }
 
+    public ConversionService getConversionService() {
+        return conversionService;
+    }
 
+    public void setConversionService(ConversionService conversionService) {
+        this.conversionService = conversionService;
+    }
 }

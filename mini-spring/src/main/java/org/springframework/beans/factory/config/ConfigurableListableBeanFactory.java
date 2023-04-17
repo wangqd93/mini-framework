@@ -3,6 +3,7 @@ package org.springframework.beans.factory.config;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.ConfigurableBeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
+import org.springframework.core.convert.ConversionService;
 import org.springframework.util.StringValueResolver;
 
 /**
@@ -27,5 +28,9 @@ public interface ConfigurableListableBeanFactory extends ListableBeanFactory, Au
 	void preInstantiateSingletons() throws BeansException;
 
 	void addBeanPostProcessor(BeanPostProcessor beanPostProcessor);
+
+	void setConversionService(ConversionService conversionService);
+
+	ConversionService getConversionService();
 
 }
