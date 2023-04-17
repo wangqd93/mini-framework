@@ -3,6 +3,7 @@ package org.springframework.beans.factory.config;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.ConfigurableBeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
+import org.springframework.util.StringValueResolver;
 
 /**
  */
