@@ -3,8 +3,7 @@ package org.springframework.test.ioc;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.test.ioc.bean.Car;
-import org.springframework.test.ioc.common.CarFactoryBean;
+import org.springframework.test.bean.Car;
 
 public class FactoryBeanTest {
 

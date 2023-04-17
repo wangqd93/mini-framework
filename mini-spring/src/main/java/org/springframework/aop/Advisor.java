@@ -1,2 +1,8 @@
-package org.springframework.aop;public interface Advisor {
+package org.springframework.aop;
+
+import org.aopalliance.aop.Advice;
+
+public interface Advisor {
+
+    Advice getAdvice();
 }

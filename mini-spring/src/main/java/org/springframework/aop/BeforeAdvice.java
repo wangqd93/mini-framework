@@ -1,4 +1,4 @@
-package org.springframework.aop.framework;
+package org.springframework.aop;
 
 import org.aopalliance.aop.Advice;
 

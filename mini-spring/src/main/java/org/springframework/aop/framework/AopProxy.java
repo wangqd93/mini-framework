@@ -1,2 +1,6 @@
-package org.springframework.aop.framework;public class AopProxy {
+package org.springframework.aop.framework;
+
+public interface AopProxy {
+
+    Object getProxy();
 }

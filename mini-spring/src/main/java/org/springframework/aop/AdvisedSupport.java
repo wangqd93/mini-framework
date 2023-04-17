@@ -3,7 +3,10 @@ package org.springframework.aop;
 
 import org.aopalliance.intercept.MethodInterceptor;
 
-public class AdviceSupport {
+public class AdvisedSupport {
+
+    private boolean proxyTargetClass = false;
+
     private TargetSource targetSource;
 
     private MethodInterceptor methodInterceptor;
@@ -32,5 +35,13 @@ public class AdviceSupport {
 
     public void setMethodMatcher(MethodMatcher methodMatcher) {
         this.methodMatcher = methodMatcher;
+    }
+
+    public boolean isProxyTargetClass() {
+        return proxyTargetClass;
+    }
+
+    public void setProxyTargetClass(boolean proxyTargetClass) {
+        this.proxyTargetClass = proxyTargetClass;
     }
 }

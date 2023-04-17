@@ -1,2 +1,7 @@
-package org.springframework.aop;public class ClassFilter {
+package org.springframework.aop;
+
+public interface ClassFilter {
+
+    boolean matches(Class<?> clazz);
+
 }

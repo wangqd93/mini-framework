@@ -1,4 +1,6 @@
-package org.springframework.aop.framework;
+package org.springframework.aop;
+
+import org.springframework.aop.BeforeAdvice;
 
 import java.lang.reflect.Method;
 
